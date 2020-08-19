@@ -1,15 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
 import Hello from "./compoments/Hello";
+import MyAnim from "./compoments/MyAnim";
 import CoolBox from "./compoments/CoolBox";
-import CoolTransition from "./compoments/CoolTransition";
+import CoolNumber from "./compoments/CoolNumber";
 
 function App() {
   return (
     <>
       <Hello>hi</Hello>
-      <CoolBox opacity={0.2} />
-      <CoolTransition />
+      <CoolNumber />
+      {/* <MyAnim /> */}
     </>
   );
 }
