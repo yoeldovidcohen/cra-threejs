@@ -2,7 +2,7 @@ import { animated, useSpring } from "react-spring";
 import React from "react";
 import CoolBox from "./CoolBox";
 
-const CoolB = () => {
+const CoolMotion = () => {
   const fade = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
@@ -19,4 +19,4 @@ const CoolB = () => {
   );
 };
 
-export default CoolB;
+export default CoolMotion;
