@@ -13,7 +13,7 @@ const CoolBox = styled.div<Props>`
 `;
 
 CoolBox.defaultProps = {
-  opacity: 0.6,
+  opacity: 1,
 };
 
 export default CoolBox;

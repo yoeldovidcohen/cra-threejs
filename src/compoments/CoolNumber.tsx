@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useSpring, animated, SpringValue } from "react-spring";
+import { useSpring, animated } from "react-spring";
 import styled from "styled-components/macro";
 
 const CoolDiv = styled(animated.div)`
@@ -12,18 +12,17 @@ const CoolDiv = styled(animated.div)`
 `;
 
 const CoolNumber = () => {
-  const [isHigh, setHigh] = useState(false);
-  const { number } = useSpring({
-    number: isHigh ? 1 : 0.5,
+  const props = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
   });
-  const toggle = () => setHigh((state) => !state);
-
   return (
     <>
-    <h1>hi</h1>
+      <h1>hi</h1>
       {/* <button onClick={toggle}>TOGGLE</button> */}
       {/* <animated.span>{number.interpolate((x) => x.toFixed(10))}</animated.span> */}
-      <CoolDiv style
+      {/* <CoolDiv style={{ props }} /> */}
+      {/* <animated.h1 style={props}>hello</animated.h1> */}
     </>
   );
 };
